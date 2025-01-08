@@ -54,6 +54,13 @@
     </a>
 </li>
 
+<li class="nav-item">
+    <a href="{{ route('fabrics.index') }}" class="nav-link {{ Request::is('fabrics*') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-leaf" style="color: green;"></i>
+        <p style="color: green;">Fabrics</p>
+    </a>
+</li>
+
 <li class="nav-item has-treeview {{ Request::is('roles*') || Request::is('permissions*') || Request::is('user*') ? 'menu-open' : '' }}">
         <a href="#" class="nav-link {{ Request::is('roles*') || Request::is('permissions*') || Request::is('user*') ? 'active' : '' }}">
             <i class="nav-icon fas fa-users-cog" style="color: green;"></i>
@@ -85,3 +92,5 @@
             </li>
         </ul>
     </li>
+
+

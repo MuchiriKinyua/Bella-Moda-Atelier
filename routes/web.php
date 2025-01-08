@@ -32,3 +32,4 @@ Route::resource('wears', App\Http\Controllers\WearController::class);
 Route::resource('roles', App\Http\Controllers\RoleController::class);
 Route::resource('permissions', App\Http\Controllers\PermissionController::class);
 Route::resource('users', UserController::class);
+Route::resource('fabrics', App\Http\Controllers\FabricController::class);
