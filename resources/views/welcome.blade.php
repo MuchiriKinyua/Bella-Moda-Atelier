@@ -467,7 +467,7 @@ footer {
             </nav>
             <div class="separator"></div>
             <nav class="categories">
-    <a href="#kids">Bella Moda Kids</a>
+    <a href="{{ url('/kids') }}">Bella Moda Kids</a>
     <a href="#kings">Bella Moda Bridal</a>
     <a href="#bridal">Bella Moda Kings </a>
     <a href="#lingerie">Bella Moda Lingerie</a>
