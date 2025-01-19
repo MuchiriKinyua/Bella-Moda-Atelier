@@ -380,16 +380,85 @@
   line-height: 1.25rem;
   color: rgba(107, 114, 128, 1);
 }
+
+footer {
+         
+            color: #111;
+            padding: 40px 20px;
+            position: relative;
+            width: 100%;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            animation: slideIn 1s ease-in-out;
+        }
+        .footer-section h3 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #111;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #1da1f2;
+        }
+        .map-container {
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+        }
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: calc(100% - 22px);
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #1da1f2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .newsletter button:hover {
+            background-color: #6dd5ed;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
         </style>
     </head>
     <body>
         <!-- Welcome Card -->
         <div class="welcome-card">
             <nav>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About Us</a></li>
                 <li class="logo">Bella Moda Artelier</li>
-                <li><a href="#">Categories</a></li>
+                <li><a href="#categories">Categories</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li class="social-icons"> 
                     <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
@@ -399,8 +468,8 @@
             <div class="separator"></div>
             <nav class="categories">
     <a href="#kids">Bella Moda Kids</a>
-    <a href="#kings">Bella Moda Kings</a>
-    <a href="#bridal">Bella Moda Bridal</a>
+    <a href="#kings">Bella Moda Bridal</a>
+    <a href="#bridal">Bella Moda Kings </a>
     <a href="#lingerie">Bella Moda Lingerie</a>
     <a href="#ready-to-wear">Bella Moda Ready to Wear</a>
     <a href="#jewellery">Bella Moda Jewellery</a>
@@ -408,17 +477,18 @@
 </nav>
         </div>
         <div>
-            <div class="home">
+            <div class="home" id="home">
                 <h1>Bella Moda <br> Artelier</h1>
-                <p> Welcome to Bella Moda Atelier!  <br>
+                <p> <b> Welcome to Bella Moda Atelier!  <br>
                 your ultimate destination for exquisite fashion,
                 timeless elegance, and <br> bespoke experiences. Our brand is built on the foundation of
                 delivering  <br> style that celebrates individuality and caters to every unique moment in your life.
+               <br> we are more than just fashion—we are a lifestyle. <br> Explore our world, and let us help you create memories in style.</b>
                 </p>
             </div>
 
 <div class="container">
-    <div class="section">
+    <div class="section" id="categories">
       <h2 style="margin-right: 20%;">Bella Moda Kids</h2>
       <p style="margin-right: 20%;">
         Dress Your Little Ones In Style! <br> We Offer A Curated Collection Of Playful, Elegant, And Comfortable Outfits For Kids. <br> From Casual Wear To Special Occasion Attire, We Ensure Your Kids Look Their Best Every Day.
@@ -439,7 +509,70 @@
       </p>
       <button class="btn" style="margin-left: 25%;">Get Started</button>
     </div>
+
+  </div>
+  <div class="container">
+    <div class="section">
+      <h2 style="margin-right: 20%;">Bella Moda Kings</h2>
+      <p style="margin-right: 20%;">
+      Celebrate modern masculinity with Bella Moda Kings, our premium collection for men. <br> We provide tailored suits, casual wear, and accessories designed to reflect confidence, sophistication, and charm.
+      </p>
+      <button class="btn" style="margin-right: 20%;">Get Started</button>
+      <div class="image-wrapper">
+        <img src="https://i.pinimg.com/736x/44/5b/11/445b1121caefd34f631a37fdb30c6b81.jpg" alt="Bella Moda Kings">
+      </div>
     </div>
+
+    <div class="section">
+      <div class="image-wrapper">
+        <img src="https://i.pinimg.com/474x/4d/95/22/4d952298b289ee919d3431c2db2e36b2.jpg" alt="Bella Moda Bridal">
+      </div>
+      <h2 style="margin-left: 25%;">Bella Moda Lingerie</h2>
+      <p  style="margin-left: 25%;">
+      Indulge in comfort and sensuality with Bella Moda Lingerie. <br> We offer a diverse range of intimate wear that combines luxury with functionality, <br> ensuring you feel confident inside and out.
+
+      </p>
+      <button class="btn" style="margin-left: 25%;">Get Started</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2 style="margin-right: 20%;">Bella Moda Ready to wear</h2>
+      <p style="margin-right: 20%;">
+      Stay effortlessly chic with Bella Moda Ready to Wear. <br> Our ready-to-wear line features trendy, versatile pieces for every occasion, <br> blending comfort with style to match your dynamic lifestyle.
+      </p>
+      <button class="btn" style="margin-right: 20%;">Get Started</button>
+      <div class="image-wrapper">
+        <img src="https://i.pinimg.com/originals/44/37/e8/4437e81a9e9d25400d7345eeea41619a.jpg" alt="Bella Moda ready to wear">
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="image-wrapper">
+        <img src="https://i.pinimg.com/originals/5b/a6/32/5ba6326289404c7a81ed446e1292bcea.png" alt="Bella Moda Bridal">
+      </div>
+      <h2 style="margin-left: 25%;">Bella Moda Jewellery</h2>
+      <p  style="margin-left: 25%;">
+      Add the perfect finishing touch with Bella Moda Jewellery. <br> From statement pieces to delicate designs, our collection celebrates craftsmanship <br> and elegance, ensuring you shine at every occasion.
+
+      </p>
+      <button class="btn" style="margin-left: 25%;">Get Started</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2 style="margin-right: 20%;">Bella Moda Shoes</h2>
+      <p style="margin-right: 20%;">
+      Stay effortlessly chic with Bella Moda Ready to Wear. <br> Our ready-to-wear line features trendy, versatile pieces for every occasion, <br> blending comfort with style to match your dynamic lifestyle.
+      </p>
+      <button class="btn" style="margin-right: 20%;">Get Started</button>
+      <div class="image-wrapper" style="margin-left: 80%;">
+        <img src="https://i.pinimg.com/736x/9d/eb/00/9deb005da3e21bda91f5e92296a08296.jpg" alt="Bella Moda ready to wear">
+      </div>
+    </div>
+  </div>
    <!-- review cards -->
 <div class="reviews">
 <h2>Come and Join</h2>
@@ -582,10 +715,48 @@
 </div>
 
         <!-- Footer -->
-        <footer>
-            &copy; 2025 Bella Moda Atelier. All rights reserved.
-        </footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are more than just fashion— We are a lifestyle!! Explore our world, and let us help you create memories in style.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@bellamodaartelier.com</p>
+                <p>Phone: +254745416760</p>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <div class="map-container">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.485943661672!2d36.81808400915704!3d-1.2855360986968323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f118e570022f3%3A0xfa292d8be20ca531!2s680%20Hotel!5e1!3m2!1sen!2ske!4v1736927030685!5m2!1sen!2ske">
+                        </iframe>
+                </div>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter to stay updated on our latest news and offers.</p>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <p>&copy; <span id="year"></span> Bella Moda Atelier. All rights reserved.</p>
+        </div>
+    </footer>
         </main>
+        <script>
+        // Set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
         <script>
   function toggleAccordion() {
     const content = document.getElementById('accordionContent');
