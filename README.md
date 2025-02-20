@@ -9,7 +9,7 @@ Welcome to the Bella Moda Atelier website! This platform showcases a curated col
 
 # Features
 
-# Navigation
+## Navigation
 
 A top navigation bar with links to:
 
@@ -23,7 +23,7 @@ Gallery
 
 Social Media Links (WhatsApp & Instagram)
 
-# Categories Section
+## Categories Section
 
 Showcases different fashion collections:
 
@@ -41,11 +41,11 @@ Bella Moda Jewellery
 
 Bella Moda Shoes
 
-# Hero Section
+## Hero Section
 
 Displays a welcome message introducing Bella Moda Atelier and its fashion philosophy.
 
-# Product Highlights
+## Product Highlights
 
 Sections dedicated to:
 
@@ -53,13 +53,13 @@ Bella Moda Kids (including description and call-to-action button)
 
 Bella Moda Bridal (including description and call-to-action button)
 
-# Customer Reviews
+## Customer Reviews
 
 A review slider featuring real customer testimonials with star ratings.
 
 Displays the customer’s name, date, and their experience with Bella Moda products.
 
-# Review Form (Accordion Style)
+## Review Form (Accordion Style)
 
 Users can submit their reviews by filling out a form.
 
@@ -70,6 +70,44 @@ Name
 Rating (1-5)
 
 Review text
+
+# Admin Panel
+
+## Dashboard
+
+Home: Overview of the platform.
+
+Bridals: Manage bridal collections.
+
+Jewelleries: Manage jewellery collections.
+
+Kids: Manage kids' fashion.
+
+Kings: Manage men's fashion.
+
+Lingeries: Manage lingerie collections.
+
+Shoes: Manage shoe collections.
+
+Wears: Manage ready-to-wear collections.
+
+Fabrics: Manage fabric collections.
+
+## User Management
+
+Roles: Define and manage user roles.
+
+Permissions: Assign and manage permissions.
+
+Users: Manage user accounts and access control.
+
+## Navigation & UI
+
+Icons for quick identification of sections.
+
+Active state highlighting for the current section.
+
+Expandable menu for "Users and Controls" with sub-sections for roles, permissions, and users.
 
 # Technologies Used
 
