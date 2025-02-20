@@ -1,4 +1,4 @@
-#                                  Bella Moda Atelier
+# Bella Moda Atelier
 
 ![Screenshot from 2025-02-20 13-16-55](https://github.com/user-attachments/assets/b90348cf-8961-4f01-9fd9-5807c4ef7c5d)
 
