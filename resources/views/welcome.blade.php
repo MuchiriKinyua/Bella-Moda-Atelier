@@ -374,6 +374,11 @@
   color: rgba(107, 114, 128, 1);
 }
 
+.auth-links {
+    margin-left: auto; 
+    padding-left: 30px;
+}
+
 .author {
   margin-top: 1.3rem;
   font-size: 0.875rem;
@@ -383,30 +388,51 @@
         </style>
     </head>
     <body>
+      
         <!-- Welcome Card -->
         <div class="welcome-card">
-            <nav>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li class="logo">Bella Moda Artelier</li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li class="social-icons"> 
-                    <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="logo">Bella Moda Artelier</li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li class="social-icons"> 
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+
+            @if (Route::has('login'))
+                <li class="auth-links">
+                    @auth
+                        <a href="{{ url('/home') }}" class="auth-button">Home</a>
+                    @else
+                        <a href="{{ route('login') }}" class="auth-button">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="auth-button">Register</a>
+                        @endif
+                    @endauth
                 </li>
-            </nav>
-            <div class="separator"></div>
-            <nav class="categories">
-    <a href="#kids">Bella Moda Kids</a>
-    <a href="#kings">Bella Moda Kings</a>
-    <a href="#bridal">Bella Moda Bridal</a>
-    <a href="#lingerie">Bella Moda Lingerie</a>
-    <a href="#ready-to-wear">Bella Moda Ready to Wear</a>
-    <a href="#jewellery">Bella Moda Jewellery</a>
-    <a href="#shoes">Bella Moda Shoes</a>
-</nav>
-        </div>
+            @endif
+        </ul>
+    </nav>
+
+    <div class="separator"></div>
+    
+    <nav class="categories">
+        <a href="#kids">Bella Moda Kids</a>
+        <a href="#kings">Bella Moda Kings</a>
+        <a href="#bridal">Bella Moda Bridal</a>
+        <a href="#lingerie">Bella Moda Lingerie</a>
+        <a href="#ready-to-wear">Bella Moda Ready to Wear</a>
+        <a href="#jewellery">Bella Moda Jewellery</a>
+        <a href="#shoes">Bella Moda Shoes</a>
+    </nav>
+</div>
+
+        
         <div>
             <div class="home">
                 <h1>Bella Moda <br> Artelier</h1>

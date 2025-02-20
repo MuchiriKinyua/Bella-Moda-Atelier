@@ -57,7 +57,7 @@
 <li class="nav-item">
     <a href="{{ route('fabrics.index') }}" class="nav-link {{ Request::is('fabrics*') ? 'active' : '' }}">
         <i class="nav-icon fas fa-leaf" style="color: green;"></i>
-        <p style="color: green;">Fabrics</p>
+        <p>Fabrics</p>
     </a>
 </li>
 
